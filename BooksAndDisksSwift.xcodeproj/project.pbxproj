@@ -12,6 +12,9 @@
 		22D64EE61D4C72FC00974E70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D64EE41D4C72FC00974E70 /* Main.storyboard */; };
 		22D64EE81D4C72FC00974E70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22D64EE71D4C72FC00974E70 /* Assets.xcassets */; };
 		22D64EEB1D4C72FC00974E70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D64EE91D4C72FC00974E70 /* LaunchScreen.storyboard */; };
+		22D64EF31D4C734800974E70 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D64EF21D4C734800974E70 /* Products.swift */; };
+		22D64EF51D4C737A00974E70 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D64EF41D4C737A00974E70 /* TableViewController.swift */; };
+		22D64EF71D4C738900974E70 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D64EF61D4C738900974E70 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		22D64EE71D4C72FC00974E70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22D64EEA1D4C72FC00974E70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22D64EEC1D4C72FC00974E70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22D64EF21D4C734800974E70 /* Products.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		22D64EF41D4C737A00974E70 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		22D64EF61D4C738900974E70 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +60,11 @@
 		22D64EDF1D4C72FC00974E70 /* BooksAndDisksSwift */ = {
 			isa = PBXGroup;
 			children = (
-				22D64EE01D4C72FC00974E70 /* AppDelegate.swift */,
+				22D64EF21D4C734800974E70 /* Products.swift */,
+				22D64EF41D4C737A00974E70 /* TableViewController.swift */,
+				22D64EF61D4C738900974E70 /* TableViewCell.swift */,
 				22D64EE21D4C72FC00974E70 /* ViewController.swift */,
+				22D64EE01D4C72FC00974E70 /* AppDelegate.swift */,
 				22D64EE41D4C72FC00974E70 /* Main.storyboard */,
 				22D64EE71D4C72FC00974E70 /* Assets.xcassets */,
 				22D64EE91D4C72FC00974E70 /* LaunchScreen.storyboard */,
@@ -96,6 +105,7 @@
 				TargetAttributes = {
 					22D64EDC1D4C72FC00974E70 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = J5WNS879BM;
 					};
 				};
 			};
@@ -135,8 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D64EF71D4C738900974E70 /* TableViewCell.swift in Sources */,
+				22D64EF31D4C734800974E70 /* Products.swift in Sources */,
 				22D64EE31D4C72FC00974E70 /* ViewController.swift in Sources */,
 				22D64EE11D4C72FC00974E70 /* AppDelegate.swift in Sources */,
+				22D64EF51D4C737A00974E70 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +262,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = BooksAndDisksSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZMB.BooksAndDisksSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -260,7 +275,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = BooksAndDisksSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZMB.BooksAndDisksSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
